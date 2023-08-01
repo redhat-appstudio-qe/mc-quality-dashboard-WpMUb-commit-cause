@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-zszd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-hyxt-tenant/mc-quality-dashboard/backend-quality-dashboard-zszd@sha256:129cf9d67f390ff2085ff91de799347d2df89f3cf18b9337280158e010215686
+        name: container-image
+        resources: {}
+status: {}
